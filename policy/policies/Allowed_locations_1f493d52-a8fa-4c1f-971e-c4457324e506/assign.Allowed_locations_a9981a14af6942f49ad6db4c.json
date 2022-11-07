@@ -1,0 +1,47 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "8885c40c-f08b-42bd-b72a-3ec25fff73e4",
+  "tenantId": "1cb8c4d2-40fc-48a2-8a78-89e6de8fea9a",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Allowed locations",
+  "policyDefinitionId": "/subscriptions/1a47acd7-90c6-43f0-977b-c00bd9573f49/providers/Microsoft.Authorization/policyDefinitions/1f493d52-a8fa-4c1f-971e-c4457324e506",
+  "scope": "/subscriptions/1a47acd7-90c6-43f0-977b-c00bd9573f49",
+  "notScopes": [],
+  "parameters": {
+   "listOfAllowedLocations": {
+    "value": [
+     "eastus",
+     "asia"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "keerthi reddy",
+   "parameterScopes": {
+    "listOfAllowedLocations": "/subscriptions/1a47acd7-90c6-43f0-977b-c00bd9573f49"
+   },
+   "createdBy": "a0ec3bd5-ead1-4a84-8217-e03ca8c2f6cd",
+   "createdOn": "2022-11-01T17:46:26.2902488Z",
+   "updatedBy": "dbb39710-cd8b-4c58-a784-4dff8fb5f09f",
+   "updatedOn": "2022-11-01T18:02:57.5436803Z",
+   "gitHubPolicy": {
+    "digest": "2c9cdd8f68b1485659e5d819ac751776d115a407",
+    "repoName": "araveetinareshkumarreddy/azure",
+    "commitSha": "01664992572be07a5b24aa423bc23148fc788204",
+    "runUrl": "https://github.com/araveetinareshkumarreddy/azure/actions/runs/3371690318",
+    "filepath": "policies/Allowed_locations_1f493d52-a8fa-4c1f-971e-c4457324e506/assign.Allowed_locations_a9981a14af6942f49ad6db4c.json"
+   }
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/1a47acd7-90c6-43f0-977b-c00bd9573f49/providers/Microsoft.Authorization/policyAssignments/a9981a14af6942f49ad6db4c",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "a9981a14af6942f49ad6db4c",
+ "location": "eastus"
+}

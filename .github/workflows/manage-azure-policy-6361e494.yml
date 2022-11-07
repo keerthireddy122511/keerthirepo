@@ -1,0 +1,32 @@
+name: manage-azure-policy-6361e494
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'policy/policies/Allowed_locations_1f493d52-a8fa-4c1f-971e-c4457324e506/**'
+#      - .github/workflows/manage-azure-policy-6361e494.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_6361e494}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          policy/policies/Allowed_locations_1f493d52-a8fa-4c1f-971e-c4457324e506/**
